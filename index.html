@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analog Watch</title>
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- link to google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    <!-- link to fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- link to  p5 library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="analog_clock">
+            <svg height="250" width="250" class="clock">
+            
+<circle cx=125 cy=125 r=115></circle>
+<line x1=125 y1=125 x2=125 y2=40 class="second"></line>
+<text x=125 y=40  class="timeNumber">12</text>
+<text x=125 y=220 class="timeNumber">6</text>
+
+<line x1=125 y1=125 x2=125 y2=50 class="minute"></line>
+<line x1=125 y1=125 x2=125 y2=60 class="hour"></line>
+<line x1=125 y1=125 x2=125 y2=35 class="milisecond"></line>
+<line x1=125 y1=125 x2=125 y2=140 class="secondTail"></line>
+<text class="day" x=90 y=150></text>
+        </svg>
+            <br>
+            <svg height="100" width="26" class="pendulum">
+<line x1=13 y1=0 x2=13 y2=75 class="string"></line>
+<circle cx=13 cy=75 r=10 class="bob"></circle>
+        </svg>
+        </div>
+        <div class="refrencetime">
+            <p class="refrencetime">
+
+            </p>
+        </div>
+    </div>
+    <!-- link to custom js  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+circle {
+    stroke: rgb(245, 0, 0);
+    stroke-width: 10px;
+    fill: url(https://unsplash.com/photos/4dpAqfTbvKA);
+}
+
+line.second {
+    stroke: rgb(17, 205, 230);
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+
+line.secondTail {
+    stroke: rgb(17, 205, 230);
+    stroke-width: 2px;
+}
+
+line.minute {
+    stroke: rgb(226, 104, 4);
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+line.hour {
+    stroke: blueviolet;
+    stroke-width: 6px;
+    stroke-linecap: round;
+}
+
+line.milisecond {
+    stroke: rgb(20, 245, 0);
+    stroke-width: 0.5px;
+    stroke-linecap: butt;
+}
+
+.hour,
+.minute,
+.second,
+.secondTail,
+.milisecond {
+    transform-origin: center;
+}
+
+
+/* css for pendulum */
+
+.pendulum {
+    background: white;
+    animation: move 1s infinite linear;
+    transform-origin: top;
+}
+
+.string {
+    stroke: rgb(245, 0, 0);
+    stroke-width: 5px;
+    transform-origin: top;
+}
+
+.bob {
+    transform-origin: center;
+    stroke: rgb(245, 0, 0);
+    stroke-width: 5px;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* positioning the bob  */
+
+.analog_clock {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    border: 2px solid red;
+    background-image: url(photo-1535418126925-0bfb3a0ee0d7.jpg);
+    background-size: cover;
+}
+
+.pendulum {
+    position: absolute;
+    top: 68%;
+    left: 45%;
+    background: none;
+}
+
+div.refrencetime {
+    height: 50px;
+    width: 250px;
+    font-family: orbitron;
+    font-size: 38px;
+    color: red;
+    border: 2px solid red;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-indent: 2px;
+    background: rgb(32, 218, 48);
+}
+
+span {
+    background: #000;
+}
+
+.box {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+text.day {
+    fill: white;
+}
+
+text.timeNumber {
+    fill: white;
+    font-size: 25px;
+}
